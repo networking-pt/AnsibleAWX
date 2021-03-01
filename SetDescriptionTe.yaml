@@ -4,11 +4,11 @@
   gather_facts: no
 
   tasks:
-  - name: "Set Description"
+  - name: "Set Description Tengigabit Ethernet"
     dellos9_config:
       lines:
          - interface tengigabitenthernet x/x
-         - set description XXXX
+         - set description xxx
          - end
          
  #   register: show_ver
