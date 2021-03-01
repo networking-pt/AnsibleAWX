@@ -1,0 +1,15 @@
+---
+- hosts: leaf6a
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - name: "Set Description"
+    dellos9_config:
+      lines:
+         - interface tengigabitenthernet x/x
+         - set description XXXX
+         - end
+         
+ #   register: show_ver
+ 
