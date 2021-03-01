@@ -4,7 +4,7 @@
   gather_facts: no
 
   tasks:
-  - name: "Tag Port Channel"
+  - name: "Untagged Port Channel"
     dellos9_config:
       lines:
          - interface vlan XXX
