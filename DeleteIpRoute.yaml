@@ -1,0 +1,14 @@
+---
+- hosts: leaf6a
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - name: "Tag Port Channel"
+    dellos9_config:
+      lines:
+         - no ip route 1.2.3.4 255.255.255.0 1.2.3.4
+         - end
+         
+ #   register: show_ver
+ 
