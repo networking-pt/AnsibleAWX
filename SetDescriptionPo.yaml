@@ -1,0 +1,12 @@
+---
+- hosts: leaf6a
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - name: "Set Description Port Channel"
+    dellos9_config:
+      lines:
+         - interface port-channel x
+         - description xxx
+         - end
