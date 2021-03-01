@@ -8,7 +8,7 @@
     dellos9_config:
       lines:
          - interface tengigabitenthernet x/x
-         - set description xxx
+         - description xxx
          - end
          
  #   register: show_ver
