@@ -1,1 +1,15 @@
-q
+---
+- hosts: leaf6a
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - name: "Tag Port Channel"
+    dellos9_config:
+      lines:
+         - interface vlan XXX
+         - untagged port-channel xx
+         - end
+         
+ #   register: show_ver
+ 
