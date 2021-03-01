@@ -1,0 +1,11 @@
+---
+- hosts: leaf6a
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - name: "Create Vlan"
+    dellos9_config:
+      lines:
+         - interface vlan 999
+         - end
