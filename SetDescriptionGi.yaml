@@ -8,5 +8,5 @@
     dellos9_config:
       lines:
          - interface gigabitenthernet x/x
-         - set description XXXX
+         - description XXXX
          - end
