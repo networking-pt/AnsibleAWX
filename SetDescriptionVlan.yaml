@@ -1,0 +1,12 @@
+---
+- hosts: leaf6a
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - name: "Set Description Vlan"
+    dellos9_config:
+      lines:
+         - interface vlan xxx
+         - set description xxx
+         - end
