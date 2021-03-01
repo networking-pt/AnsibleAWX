@@ -1,0 +1,12 @@
+---
+- hosts: wan15a,wan15b
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - name: "Retrieve Configuration File"
+    dellos9_config:
+      backup: yes
+
+      backup_options:
+        dir_path:  /backups/colo
