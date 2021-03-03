@@ -1,5 +1,5 @@
 ---
-- hosts: leaf6a
+- hosts: leaf3a, leaf3b
   connection: local
   gather_facts: no
 
