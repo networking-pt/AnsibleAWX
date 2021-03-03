@@ -6,14 +6,8 @@
   tasks:
   - name: "Delete Vlan"
     dellos_vlan:
-#    default_vlan: true
-    vlan 999:
-#      name: "Mgmt Network"
-#      description: "Int-vlan"
-#      tagged_members:
-#        - port: fortyGigE 1/30
-#          state: absent
-#      untagged_members:
-#        - port: fortyGigE 1/14
-#          state: present
-      state: absent
+    default_vlan: true
+    vlan 888:
+      name: "Test awx"
+      description: "test"
+      state: present
