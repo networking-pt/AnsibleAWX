@@ -7,6 +7,6 @@
   - name: "No Tagged Port Channel"
     dellos9_config:
       lines:
-         - interface vlan XXX
-         - no tagged port-channel xx
+         - interface vlan 999
+         - no tagged port-channel 3
          - end
