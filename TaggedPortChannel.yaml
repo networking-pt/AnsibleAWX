@@ -7,8 +7,8 @@
   - name: "Tag Port Channel"
     dellos9_config:
       lines:
-         - interface vlan XXX
-         - tagged port-channel xx
+         - interface vlan 999
+         - tagged port-channel 3
          - end
          
  #   register: show_ver
