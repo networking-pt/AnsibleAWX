@@ -1,4 +1,11 @@
-    dellos_vlan:
+---
+- hosts: leaf6a
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - name: "Delete Vlan"
+   dellos_vlan:
      default_vlan: true
      vlan 888:
        name: "Test awx"
