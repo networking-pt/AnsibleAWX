@@ -1,13 +1,13 @@
----
-- hosts: leaf6a
-  connection: local
-  gather_facts: no
+#---
+#- hosts: leaf6a
+#  connection: local
+#  gather_facts: no
 
-  tasks:
-  - name: "Delete Vlan"
+#  tasks:
+#  - name: "Delete Vlan"
     dellos_vlan:
-    default_vlan: true
-    vlan 888:
-      name: "Test awx"
-      description: "test"
-      state: present
+     default_vlan: true
+     vlan 888:
+       name: "Test awx"
+       description: "test"
+     state: present
