@@ -5,7 +5,7 @@
 
   tasks:
   - name: "Delete Vlan"
-    dellos9_config:
+    dellos9_command:
       lines:
          - no interface vlan 999
          - end
