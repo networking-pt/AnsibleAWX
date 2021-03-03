@@ -8,4 +8,5 @@
     dellos9_config:
       lines:
          - interface vlan 999
+         - description xxx
          - end
