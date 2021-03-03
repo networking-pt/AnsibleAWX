@@ -1,9 +1,11 @@
 ---
-- hosts: leaf3a, leaf6a
+- hosts: leaf3a
   connection: local
   gather_facts: no
 
   tasks:
   - name: "Delete Vlan"
-    dellos9_command:
-      commands: ['no interface vlan 999']
+    dellos9_config:
+      lines:
+         - no interface vlan 999
+         - end
