@@ -5,7 +5,15 @@
 
   tasks:
   - name: "Delete Vlan"
-    dellos9_config:
-      lines:
-         - no interface vlan 999
-         - end
+    dellos_vlan:
+#    default_vlan: true
+    vlan 999:
+#      name: "Mgmt Network"
+#      description: "Int-vlan"
+#      tagged_members:
+#        - port: fortyGigE 1/30
+#          state: absent
+#      untagged_members:
+#        - port: fortyGigE 1/14
+#          state: present
+      state: absent
