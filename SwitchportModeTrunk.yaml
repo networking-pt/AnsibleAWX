@@ -1,5 +1,5 @@
 ---
-- hosts: leaf6a
+- hosts: idf1_datos_sw2
   connection: local
   gather_facts: no
 
@@ -7,6 +7,6 @@
   - name: "Switch Port Mode Trunk"
     dellos9_config:
       lines:
-         - interface gigabitethernet x/x/x
+         - interface gigabitethernet 1/0/3
          - switchport mode trunk
          - end
