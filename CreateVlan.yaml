@@ -1,5 +1,5 @@
 ---
-- hosts: leaf3a, leaf3b
+- hosts: idf1_datos_sw2
   connection: local
   gather_facts: no
 
@@ -8,5 +8,5 @@
     dellos9_config:
       lines:
          - interface vlan 999
-         - description xxx
+         - description TestAwx
          - end
