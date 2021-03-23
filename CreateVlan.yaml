@@ -5,8 +5,8 @@
 
   tasks:
   - name: "Create Vlan"
-    dellos6_config:
+    dellos9_config:
       lines:
-         - interface vlan 999
+         - vlan 999
          - description TestAwx
          - end
