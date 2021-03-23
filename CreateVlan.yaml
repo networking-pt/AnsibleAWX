@@ -8,5 +8,5 @@
     dellos6_config:
       lines:
          - vlan 999
-         - description TestAwx
+         - name TestAwx
          - end
