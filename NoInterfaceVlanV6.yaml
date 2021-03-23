@@ -5,7 +5,7 @@
 
   tasks:
   - name: "Delete Vlan"
-     dellos6_config:
-       lines:
-       - no vlan 999
-       - end
+    dellos6_config:
+      lines:
+      - no vlan 999
+      - end
