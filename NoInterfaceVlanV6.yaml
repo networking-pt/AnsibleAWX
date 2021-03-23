@@ -1,5 +1,5 @@
 ---
-- hosts: leaf6a
+- hosts: idf1_datos_sw2
   connection: local
   gather_facts: no
 
