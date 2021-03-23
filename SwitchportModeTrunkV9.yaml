@@ -1,0 +1,12 @@
+---
+- hosts: leaf6b
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - name: "Switch Port Mode Trunk"
+    dellos9_config:
+      lines:
+         - interface gigabitethernetxxx
+         - switchport mode trunk
+         - end
