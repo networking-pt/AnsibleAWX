@@ -1,0 +1,12 @@
+---
+- hosts: leaf6a
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - name: "Set Description Gigabit Ethernet"
+    dellos6_config:
+      lines:
+         - interface gigabitenthernet x/x
+         - description XXXX
+         - end
