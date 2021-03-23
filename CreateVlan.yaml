@@ -10,5 +10,5 @@
          - interface vlan 999
          - description TestAwx
          - end
-    auth_pass: 4dm1nC0nf
-    authorize: yes
+     auth_pass: 4dm1nC0nf
+     authorize: yes
