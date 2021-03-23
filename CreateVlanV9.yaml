@@ -1,0 +1,12 @@
+---
+- hosts: leaf6b
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - name: "Create Vlan"
+    dellos9_config:
+      lines:
+         - interface vlan 999
+         - name TestAwx
+         - end
