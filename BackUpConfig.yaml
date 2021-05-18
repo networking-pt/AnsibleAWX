@@ -1,5 +1,5 @@
 ---
-- hosts: wan15a,wan15b
+- hosts: wan15a,wan15b,wan11b
   connection: local
   gather_facts: no
 
